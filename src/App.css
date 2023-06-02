@@ -331,6 +331,11 @@ footer {
   }
 }
 
+.menu{
+  background-color: rgba(255, 166, 0, 0.921);
+  
+}
+
 
 .registro{
 
@@ -344,3 +349,109 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   /* border: 1px solid; */
 }
+
+/* Menu completo */
+.encabezado{
+  position: absolute;
+  margin-top: 130px;
+  margin-bottom: 80px;
+  font-size: 1rem;
+  background-color: rgba(255, 252, 252, 0.8);
+  border-radius: 40px;
+  padding: 15px;
+}
+.menuCompleto{
+  display: flex;
+  flex-wrap: wrap;
+  
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 110px;
+  /* border: 1px solid; */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 60px;
+  background-color: white;
+}
+
+.contenedorMenu{
+  margin-top: 10px;
+}
+
+
+
+.menuOpcion{
+  margin-top: 50px;
+  padding: 40px;
+  /* border: 1px solid; */
+  text-align: center;  
+}
+.menuOpcion img{
+  width: 14vw;
+  height: 20vh;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  
+}
+
+.menuOpcion figure div button{
+  margin-top: 20px;
+}
+
+.bodyPrivado{
+    
+    height: 100vh; 
+    background-image: url('./assets/fondoPedido.jpg');
+    background-size: cover;
+}
+
+.infoCompra{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 30px;
+  background-color: white;
+  margin-left: 45%;
+  gap: 50px;
+  height: 20px;
+  }
+
+  .totalCompra{
+   
+    display: flex;
+    position: fixed;
+    margin-top: 250px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    color: black;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    border-radius: 10px;
+  }
+
+  .totalCompra div{
+    margin-top: 20px;
+  }
+
+  .cerrarSesion{
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    
+  }
+
+  .cerrarSesion:hover {
+    background-color: #ff944d;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import { menu } from '../utils/menu.js'
+import { Menu } from './Menu.jsx'
 
 export const PaginaPrivada = ({inicioSesion,setInicioSesion}) => {
 
@@ -13,6 +14,7 @@ export const PaginaPrivada = ({inicioSesion,setInicioSesion}) => {
   useEffect(() => {
     const token=JSON.parse(localStorage.getItem('token'))
     //Si existe el token y inicioSesion es true
+    // if(token && inicioSesion==true)
     if(token && inicioSesion==true){
       //Cambianos el nombre con la info del token
       setNombre(token.name)
@@ -26,6 +28,15 @@ export const PaginaPrivada = ({inicioSesion,setInicioSesion}) => {
   }, [])
   
   return (
-    <div>Bienvenido ,{nombre  }</div>
+    <>
+      
+      <div className='encabezado'>Bienvenido {nombre} !!</div>
+      <hr />
+      < div className='menuContenedor'>
+        <Menu menu={menu}></Menu>
+      </div>
+    
+    </>
+
   )
 }

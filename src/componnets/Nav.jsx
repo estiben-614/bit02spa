@@ -32,8 +32,8 @@ export const Nav = ({inicioSesion, setInicioSesion}) => {
   }
   else{
     salida=<>
-      <li><Link to='/privado'>Privado</Link></li>
-      <li><button onClick={cerrarSesión}> Cerrar sesión </button></li>
+      <li><Link to='/privado'>Menú</Link></li>
+      <li><button  className='cerrarSesion'onClick={cerrarSesión}> Cerrar sesión </button></li>
     </>
 
   }

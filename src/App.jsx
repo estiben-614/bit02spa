@@ -9,6 +9,8 @@ import { PaginaIniciarSesion } from './componnets/PaginaIniciarSesion'
 import { PaginaPrivada } from './componnets/PaginaPrivada'
 import { useEffect, useState } from 'react'
 
+
+
 function App() {
   
   //Creemos un estado para validar si se hizo o no un inicio de sesión
@@ -24,6 +26,7 @@ function App() {
 
   return (
     <>
+
     <BrowserRouter>
       <Nav inicioSesion={inicioSesion} setInicioSesion={setInicioSesion}></Nav>
       <Routes>
